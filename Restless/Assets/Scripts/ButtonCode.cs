@@ -28,4 +28,8 @@ public class ButtonCode : MonoBehaviour
         optionsMenu.SetActive(false);
         startMenu.SetActive(true);
     }
+    public void ChangeVolume(float newVolume)
+    {
+        AudioListener.volume = newVolume;
+    }
 }
