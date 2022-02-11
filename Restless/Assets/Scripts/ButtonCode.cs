@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonCode : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class ButtonCode : MonoBehaviour
     public AudioSource canvasSound;
     public GameObject optionsMenu;
     public GameObject startMenu;
+    public Slider volumeSlider;
     public void Muziek()
     {
         audioSource.Play();
@@ -20,5 +22,10 @@ public class ButtonCode : MonoBehaviour
     {
         optionsMenu.SetActive(true);
         startMenu.SetActive(false);
+    }
+    public void StartMenu()
+    {
+        optionsMenu.SetActive(false);
+        startMenu.SetActive(true);
     }
 }
