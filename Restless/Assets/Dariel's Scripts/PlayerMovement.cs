@@ -9,12 +9,14 @@ public class PlayerMovement : MonoBehaviour
     public float vertical;
     public float walkSpeed;
     public float sprintSpeed;
+    public float crouchSpeed;
     public bool isSprinting;
     public bool isWalking;
-
+    public bool isCrouching;
 
     void Start()
     {
+        crouchSpeed = 3f;
         walkSpeed = 5f;
         sprintSpeed = 8f;
     }
@@ -37,6 +39,17 @@ public class PlayerMovement : MonoBehaviour
         {
             isSprinting = false;
             isWalking = true;
+            walkSpeed = 5f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            isCrouching = true;
+            walkSpeed = crouchSpeed;
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            isCrouching = false;
             walkSpeed = 5f;
         }
     }
