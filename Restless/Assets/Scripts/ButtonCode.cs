@@ -9,10 +9,23 @@ public class ButtonCode : MonoBehaviour
     public AudioSource canvasSound;
     public GameObject optionsMenu;
     public GameObject startMenu;
+    public GameObject gameOverMenu;
     public Slider volumeSlider;
-    public void Muziek()
+
+    public void Start()
+    {
+        if (gameOverMenu == true)
+        {
+            canvasSound.Stop();
+        }
+    }
+    public void GeluidButton()
     {
         audioSource.Play();
+    }
+    public void CanvasGeluid()
+    {
+        canvasSound.Play();
     }
     public void Quit()
     {
@@ -27,5 +40,9 @@ public class ButtonCode : MonoBehaviour
     {
         optionsMenu.SetActive(false);
         startMenu.SetActive(true);
+    }
+    public void ChangeVolume(float newVolume)
+    {
+        AudioListener.volume = newVolume;
     }
 }
