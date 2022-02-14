@@ -14,10 +14,10 @@ public class ButtonCode : MonoBehaviour
 
     public void Start()
     {
-        if (gameOverMenu == true)
-        {
-            canvasSound.Stop();
-        }
+        //if (gameOverMenu == true)
+       // {
+         //   canvasSound.Stop();
+       // }
     }
     public void GeluidButton()
     {
