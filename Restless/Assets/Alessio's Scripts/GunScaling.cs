@@ -6,16 +6,11 @@ public class GunScaling : MonoBehaviour
 {
      public bool toggle;
      public Transform gun;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+
     void Update()
     {
-        if (Input.GetButtonDown("Crouch"))
+        if (Input.GetKey(KeyCode.LeftControl))
         {
             if (toggle == false)
             {
