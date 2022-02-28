@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isCrouching;
     public Transform cam;
     public bool crouchToggle;
+    public bool standingStill;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         crouchSpeed = 2f;
         walkSpeed = 5f;
         sprintSpeed = 12f;
+        //StandingStill = 0f;
     }
 
     void Update()
@@ -84,6 +86,18 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ;
+            standingStill=true;
+        }
+        else 
+        {
+            standingStill=false;
+        }
     }
 
     
