@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     public Transform cam;
     public bool crouchToggle;
     public bool standingStill;
+    public Transform player;
+    public RaycastHit hit;
+    public float zerospeed;
 
     void Start()
     {
@@ -23,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         crouchSpeed = 2f;
         walkSpeed = 5f;
         sprintSpeed = 12f;
-        //StandingStill = 0f;
+
     }
 
     void Update()
@@ -85,22 +88,26 @@ public class PlayerMovement : MonoBehaviour
             transform.localPosition += new Vector3(0f, 0.30f, 0f);
         }
 
-
-    }
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Wall")
+        if(Physics.Raycast(transform.position,transform.forward, out hit, 1))
         {
-            //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ;
-            standingStill=true;
+            if(hit.transform.gameObject.tag=="Wall")
+            {
+                standingStill=true;
+                zerospeed=zerospeed;
+                walkSpeed=0;
+            }
+            
+         
         }
         else 
         {
-            standingStill=false;
+            standingStill = false;
+            walkSpeed=5f;
         }
-    }
+       
 
-    
-  
+
+    }
     
 }
+
