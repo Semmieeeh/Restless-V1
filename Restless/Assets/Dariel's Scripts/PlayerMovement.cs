@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             {
               if(isSprinting == false)
               {
-                walkSpeed = 5f;
+                walkSpeed = 12f;
               }
             }
         }
@@ -96,14 +96,19 @@ public class PlayerMovement : MonoBehaviour
                 zerospeed=zerospeed;
                 walkSpeed=0;
             }
-            
-         
-        }
-        else 
+            else 
         {
             standingStill = false;
             walkSpeed=5f;
         }
+            
+         
+        }
+        //else 
+       // {
+          //  standingStill = false;
+          //  walkSpeed=5f;
+       // }
        
 
 
