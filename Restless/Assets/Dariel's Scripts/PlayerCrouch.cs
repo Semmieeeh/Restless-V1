@@ -15,14 +15,14 @@ public class PlayerCrouch : MonoBehaviour
             if (crouchToggle == false)
             {
                 crouchToggle = true;
-                transform.localScale -= new Vector3(0f, 0.60f, 0f);
+                transform.localScale -= new Vector3(0f, 0.80f, 0f);
                 transform.localPosition -= new Vector3(0f, 0.30f, 0f);
             }
 
             else if (crouchToggle == true)
             {
                 crouchToggle = false;
-                transform.localScale += new Vector3(0f, 0.60f, 0f);
+                transform.localScale += new Vector3(0f, 0.80f, 0f);
                 transform.localPosition += new Vector3(0f, 0.30f, 0f);
             }
         }
