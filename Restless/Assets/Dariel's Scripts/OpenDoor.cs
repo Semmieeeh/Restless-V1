@@ -6,28 +6,31 @@ public class OpenDoor : MonoBehaviour
 {
     public RaycastHit hit;
     public Vector3 v;
-    public bool isOpen;
+    public bool isOpentwo;
+    public bool isClosedtwo;
     public AudioSource source;
     public AudioClip clip;
 
 
     void Update()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 2))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 4))
         {
             if (hit.transform.gameObject.tag == "Door")
             {
                 if (Input.GetKeyDown("e"))
                 {
-                    if (isOpen == true)
+                    if (isOpentwo == true)
                     {
                         v.z = 90;
-                        isOpen = false;
+                        isOpentwo = false;
+                        isClosedtwo=true;
                     }
                     else
                     {
                         v.z = -90;
-                        isOpen = true;
+                        isOpentwo = true;
+                        isClosedtwo=false;
                     }
 
                     hit.transform.Rotate(v);
