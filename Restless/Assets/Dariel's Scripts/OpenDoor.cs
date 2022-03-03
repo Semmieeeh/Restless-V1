@@ -14,7 +14,7 @@ public class OpenDoor : MonoBehaviour
 
     void Update()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 4))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 1))
         {
             if (hit.transform.gameObject.tag == "Door")
             {

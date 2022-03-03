@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1142291604300007667}
   - component: {fileID: 4068412634082936662}
   - component: {fileID: 2274617934811329436}
+  - component: {fileID: 1712614201}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1712614201
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329304307550048841}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: eb32448ff0527a241a4ca055718323fa, type: 3}
 --- !u!1 &2670029136889553261
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 2670029136925893047}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6038133126595216340}
@@ -260,6 +275,7 @@ GameObject:
   - component: {fileID: 6610147516604614764}
   - component: {fileID: 8317261724134945062}
   - component: {fileID: 4776458116888204722}
+  - component: {fileID: 1309904451}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -332,6 +348,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1309904451
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2670029137186921303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: e4fe8ba720115734d8bcbd967e980d73, type: 3}
 --- !u!1 &2670029137333929969
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +373,7 @@ GameObject:
   - component: {fileID: 6610147516793312458}
   - component: {fileID: 8317261723954802048}
   - component: {fileID: 4776458116774775060}
+  - component: {fileID: 193994026}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -415,6 +446,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &193994026
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2670029137333929969}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: ffbc048a7fdbc464c8fceb512659880b, type: 3}
 --- !u!1 &2670029137795751995
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,8 +486,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2670029137795751995}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0.08}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6038133126928073304}
@@ -524,8 +569,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2670029138079782155}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.61}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6038133125574506344}
@@ -607,7 +652,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2670029138453665783}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.700001, y: -7.6399994, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -796,6 +841,7 @@ GameObject:
   - component: {fileID: 6610147514770133595}
   - component: {fileID: 8317261724921899793}
   - component: {fileID: 4776458117184425861}
+  - component: {fileID: 1199903081}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -868,6 +914,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1199903081
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2670029138547442016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: b051b062c57df2142ab12c5729379444, type: 3}
 --- !u!1 &2670029138957155367
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +942,7 @@ GameObject:
   - component: {fileID: 6071269472596151898}
   m_Layer: 0
   m_Name: default
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1008,6 +1068,7 @@ GameObject:
   - component: {fileID: 4516461324468412661}
   - component: {fileID: 649198052576718672}
   - component: {fileID: 3379561715999251354}
+  - component: {fileID: 1733305349}
   m_Layer: 0
   m_Name: abstractbeeldje
   m_TagString: Untagged
@@ -1080,6 +1141,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1733305349
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3883898422822615631}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: b3d43e9285492a84da0e2829baa5ddd6, type: 3}
 --- !u!1 &6071269472603366521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,6 +1393,7 @@ GameObject:
   - component: {fileID: 6038133125692792747}
   - component: {fileID: 7233934953396768782}
   - component: {fileID: 4864150151921394884}
+  - component: {fileID: 1558188049}
   m_Layer: 0
   m_Name: lamp
   m_TagString: Untagged
@@ -1390,6 +1466,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1558188049
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6377117664673809681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8691780276856062721, guid: 19a8ec7efd22a1341aea1f07db9fbf8d, type: 3}
 --- !u!1 &6377117664906715189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,7 +1782,7 @@ GameObject:
   - component: {fileID: 6071269474193808175}
   m_Layer: 0
   m_Name: bed 1
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2080,7 +2170,7 @@ GameObject:
   - component: {fileID: 6071269473101674598}
   m_Layer: 0
   m_Name: tafel
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2498,6 +2588,7 @@ GameObject:
   - component: {fileID: 7474397050687127178}
   - component: {fileID: 2181770906801768468}
   - component: {fileID: 7728521105332229323}
+  - component: {fileID: 644974266410584508}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2570,6 +2661,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &644974266410584508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903201185464627296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019977335, y: 0.0874212, z: 0.02}
+  m_Center: {x: 0.000011308307, y: -0.050120775, z: -0.0000000058939635}
 --- !u!1 &7419769387464625156
 GameObject:
   m_ObjectHideFlags: 0

@@ -99,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
             else 
         {
             standingStill = false;
-            walkSpeed=5f;
+            walkSpeed=2f;
         }
             
          
