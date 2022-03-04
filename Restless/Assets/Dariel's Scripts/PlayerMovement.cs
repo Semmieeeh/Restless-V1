@@ -97,21 +97,13 @@ public class PlayerMovement : MonoBehaviour
                 walkSpeed=0;
             }
             else 
-        {
+            {
             standingStill = false;
             walkSpeed=2f;
-        }
+            }
             
          
         }
-        //else 
-       // {
-          //  standingStill = false;
-          //  walkSpeed=5f;
-       // }
-       
-
-
     }
     
 }
