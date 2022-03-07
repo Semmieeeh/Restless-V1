@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             {
               if(isSprinting == false)
               {
-                walkSpeed = 12f;
+                walkSpeed = 5f;
               }
             }
         }
