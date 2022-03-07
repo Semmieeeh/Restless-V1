@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro:
 
 public class Sliderpuzzle : MonoBehaviour
 {
-    Text percentageText;
+    TextMeshProUGUI percentageText;
 
     void start()
     {
-        percentageText = GetComponent<Text> ();
+        percentageText = GetComponent<TextMeshProUGUI> ();
     }
 
     public void textUpdate(float value)
     {
-        percentageText.text = Mathf.RoundToInt(value * 100) + "%";
+        percentageText.textUpdate = Mathf.RoundToInt(value * 100) + "%";
     }
 }
