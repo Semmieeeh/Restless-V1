@@ -10,14 +10,19 @@ public class ButtonCode : MonoBehaviour
     public GameObject optionsMenu;
     public GameObject startMenu;
     public GameObject gameOverMenu;
+    public GameObject inventoryMenu;
     public Slider volumeSlider;
 
     public void Start()
     {
-        //if (gameOverMenu == true)
-       // {
-         //   canvasSound.Stop();
-       // }
+
+    }
+    public void Update()
+    {
+        //if (gameOverMenu,gameInventory == true)
+        // {
+        //   canvasSound.Stop();
+        // }
     }
     public void GeluidButton()
     {
