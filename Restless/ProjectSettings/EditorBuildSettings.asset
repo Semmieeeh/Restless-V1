@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: eb4841b8121fa804bacd8fe8d5695a7d
+  - enabled: 1
+    path: Assets/Scenes/GameUi.unity
+    guid: 265632a656071914faadae0ea7adb7aa
+  - enabled: 1
     path: Assets/GamePuzzle.unity
     guid: 2c3f8a7bfb3b6d244869db0476d5a5ee
   - enabled: 1
