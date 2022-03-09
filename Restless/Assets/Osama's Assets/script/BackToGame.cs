@@ -14,9 +14,9 @@ public class BackToGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            SceneManager.LoadScene(sceneName: "GameUi");
+            SceneManager.LoadScene(sceneName: "GameScene");
         }
     }
 }

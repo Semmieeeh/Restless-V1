@@ -14,9 +14,9 @@ public class InventoryCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            SceneManager.LoadScene(sceneName: "GameScene");
+            SceneManager.LoadScene(sceneName: "GameUi");
         }
     }
 }
