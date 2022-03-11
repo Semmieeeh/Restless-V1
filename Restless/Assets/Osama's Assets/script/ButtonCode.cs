@@ -22,15 +22,17 @@ public class ButtonCode : MonoBehaviour
     }
     public void Update()
     {
-        //if (gameOverMenu,gameInventory == true)
-        // {
-        //   canvasSound.Stop();
-        // }
         if (Input.GetKeyDown(KeyCode.I))
         {
-            inventoryMenu.SetActive(true);
+            canvas.SetActive(true);
             startMenu.SetActive(false);
+            inventoryMenu.SetActive(true);
+            
         }
+        //if (startMenuOn == true)
+        //{
+        //    GetComponent<LockCursor>.().enabled = true;
+        //}
     }
     public void GeluidButton()
     {
@@ -57,6 +59,8 @@ public class ButtonCode : MonoBehaviour
     public void StartGame()
     {
         canvas.SetActive(false);
+        startMenuOn = true;
+        
     }
     public void ChangeVolume(float newVolume)
     {
