@@ -24,12 +24,22 @@ public class ButtonCode : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            canvas.SetActive(true);
-            startMenu.SetActive(false);
-            inventoryMenu.SetActive(true);
-            
+            if (startMenuOn == false)
+            {
+                canvas.SetActive(true);
+                startMenu.SetActive(false);
+                inventoryMenu.SetActive(true);
+                startMenuOn = true;
+                if (startMenuOn == true)
+                {
+                    if (Input.GetKeyDown(KeyCode.I))
+                    {
+                        canvas.SetActive(false);
+                    }
+                }
+            }   
         }
-        //if (startMenuOn == true)
+        //if (startMenuOn == false)
         //{
         //    GetComponent<LockCursor>.().enabled = true;
         //}
@@ -59,7 +69,7 @@ public class ButtonCode : MonoBehaviour
     public void StartGame()
     {
         canvas.SetActive(false);
-        startMenuOn = true;
+        startMenuOn = false;
         
     }
     public void ChangeVolume(float newVolume)
