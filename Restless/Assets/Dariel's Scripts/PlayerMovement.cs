@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
         crouchSpeed = 2f;
         walkSpeed = 5f;
         sprintSpeed = 12f;
-
     }
 
     void Update()
@@ -74,10 +73,6 @@ public class PlayerMovement : MonoBehaviour
                 crouchToggle = true;
                 transform.localScale -= new Vector3(0f, 0.60f, 0f);
                 transform.localPosition -= new Vector3(0f, 0.30f, 0f);
-
-               
-
-
             }
         
         }
@@ -86,23 +81,6 @@ public class PlayerMovement : MonoBehaviour
             crouchToggle = false;
             transform.localScale += new Vector3(0f, 0.60f, 0f);
             transform.localPosition += new Vector3(0f, 0.30f, 0f);
-        }
-
-        if(Physics.Raycast(transform.position,transform.forward, out hit, 1))
-        {
-            if(hit.transform.gameObject.tag=="Wall")
-            {
-                standingStill=true;
-                zerospeed=zerospeed;
-                walkSpeed=0;
-            }
-            else 
-            {
-            standingStill = false;
-            walkSpeed=2f;
-            }
-            
-         
         }
     }
     
