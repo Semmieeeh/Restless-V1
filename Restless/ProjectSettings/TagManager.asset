@@ -8,6 +8,7 @@ TagManager:
   - Door
   - Wall
   - Monster
+  - ShrekDoor
   layers:
   - Default
   - TransparentFX

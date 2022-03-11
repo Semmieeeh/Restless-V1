@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ButtonCode : MonoBehaviour
 {
@@ -10,14 +11,25 @@ public class ButtonCode : MonoBehaviour
     public GameObject optionsMenu;
     public GameObject startMenu;
     public GameObject gameOverMenu;
+    public GameObject inventoryMenu;
     public Slider volumeSlider;
+    public bool startMenuOn;
 
     public void Start()
     {
-        //if (gameOverMenu == true)
-       // {
-         //   canvasSound.Stop();
-       // }
+
+    }
+    public void Update()
+    {
+        //if (gameOverMenu,gameInventory == true)
+        // {
+        //   canvasSound.Stop();
+        // }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            inventoryMenu.SetActive(true);
+            startMenu.SetActive(false);
+        }
     }
     public void GeluidButton()
     {
@@ -40,6 +52,17 @@ public class ButtonCode : MonoBehaviour
     {
         optionsMenu.SetActive(false);
         startMenu.SetActive(true);
+    }
+    public void StartGame()
+    {
+        startMenu.SetActive(false);
+        startMenuOn = false;
+        if(startMenuOn == false)
+        {
+            print("ik ben uit");
+            SceneManager.LoadScene(sceneName: "GameScene");
+        }
+        
     }
     public void ChangeVolume(float newVolume)
     {
