@@ -20,10 +20,7 @@ public class Sliderpuzzle : MonoBehaviour
 
     void Start()
     {
-        percentageText = GetComponent<TMP_Text>();
-        percentageTtdrie = GetComponent<TMP_Text>();
-        percentageTexexttwee = GetComponent<TMP_Text>();
-        percentageTextvier = GetComponent<TMP_Text>();
+
     }
 
     public void TextUpdate(float value)
@@ -41,7 +38,7 @@ public class Sliderpuzzle : MonoBehaviour
     }
     public void TextUpdatetwee(float value)
     {
-        percentageText.text = Mathf.RoundToInt(value * 10) + "%";
+        percentageTexttwee.text = Mathf.RoundToInt(value * 10) + "%";
         if(value>=0.67 && value < 0.73)
         {
             //SceneManager.LoadScene(1);
@@ -54,7 +51,7 @@ public class Sliderpuzzle : MonoBehaviour
     }
     public void TextUpdatedrie(float value)
     {
-        percentageText.text = Mathf.RoundToInt(value * 10) + "%";
+        percentageTextdrie.text = Mathf.RoundToInt(value * 10) + "%";
         if(value>=0.27 && value < 0.33)
         {
             //SceneManager.LoadScene(1);
@@ -67,7 +64,7 @@ public class Sliderpuzzle : MonoBehaviour
     }
     public void TextUpdatevier(float value)
     {
-        percentageText.text = Mathf.RoundToInt(value * 10) + "%";
+        percentageTextvier.text = Mathf.RoundToInt(value * 10) + "%";
         if(value>=0.87 && value < 0.93)
         {
             //SceneManager.LoadScene(1);
