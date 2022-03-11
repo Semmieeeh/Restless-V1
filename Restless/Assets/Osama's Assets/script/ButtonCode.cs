@@ -12,6 +12,7 @@ public class ButtonCode : MonoBehaviour
     public GameObject startMenu;
     public GameObject gameOverMenu;
     public GameObject inventoryMenu;
+    public GameObject canvas; 
     public Slider volumeSlider;
     public bool startMenuOn;
 
@@ -55,14 +56,7 @@ public class ButtonCode : MonoBehaviour
     }
     public void StartGame()
     {
-        startMenu.SetActive(false);
-        startMenuOn = false;
-        if(startMenuOn == false)
-        {
-            print("ik ben uit");
-            SceneManager.LoadScene(sceneName: "GameScene");
-        }
-        
+        canvas.SetActive(false);
     }
     public void ChangeVolume(float newVolume)
     {

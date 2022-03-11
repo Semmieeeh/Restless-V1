@@ -589,20 +589,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 6420084505063530380, guid: 3c74187fcb0a91443ae2628e8f619836,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6420084505063530380, guid: 3c74187fcb0a91443ae2628e8f619836,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Options
-      objectReference: {fileID: 0}
-    - target: {fileID: 6420084505063530380, guid: 3c74187fcb0a91443ae2628e8f619836,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: Quit
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c74187fcb0a91443ae2628e8f619836, type: 3}
