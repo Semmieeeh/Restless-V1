@@ -9,6 +9,7 @@ public class OpenDoor2 : MonoBehaviour
     public bool isOpen;
     public AudioSource shrek;
     public bool shrekOn;
+    public GameObject sM;
 
 
     void Update()
@@ -22,7 +23,7 @@ public class OpenDoor2 : MonoBehaviour
                 {
                     if (shrekOn == false)
                     {
-                        shrek.Play();
+                        sM.SetActive(true);
                         shrekOn = true;
                         if (isOpen == true)
                         {

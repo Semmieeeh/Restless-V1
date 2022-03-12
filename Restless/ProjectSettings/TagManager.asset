@@ -13,6 +13,7 @@ TagManager:
   - N7
   - N9
   - N3
+  - radio
   layers:
   - Default
   - TransparentFX
