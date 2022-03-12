@@ -30,14 +30,15 @@ public class ButtonCode : MonoBehaviour
                 startMenu.SetActive(false);
                 inventoryMenu.SetActive(true);
                 startMenuOn = true;
-                if (startMenuOn == true)
-                {
-                    if (Input.GetKeyDown(KeyCode.I))
-                    {
-                        canvas.SetActive(false);
-                    }
-                }
             }   
+        }
+        if (startMenuOn == true)
+        {
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                canvas.SetActive(false);
+                startMenuOn = false;
+            }
         }
         //if (startMenuOn == false)
         //{
