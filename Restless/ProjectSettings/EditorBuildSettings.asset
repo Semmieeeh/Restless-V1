@@ -12,12 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene.unity
     guid: eb4841b8121fa804bacd8fe8d5695a7d
   - enabled: 0
-    path: Assets/GamePuzzle.unity
-    guid: 2c3f8a7bfb3b6d244869db0476d5a5ee
-  - enabled: 0
     path: Assets/fromy.unity
     guid: 628d03721722c194f88f2c03eb22a485
-  - enabled: 0
-    path: Assets/Scenes/GameUi.unity
-    guid: 265632a656071914faadae0ea7adb7aa
   m_configObjects: {}
