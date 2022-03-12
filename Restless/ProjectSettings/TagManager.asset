@@ -9,6 +9,10 @@ TagManager:
   - Wall
   - Monster
   - ShrekDoor
+  - N4
+  - N7
+  - N9
+  - N3
   layers:
   - Default
   - TransparentFX

@@ -6,15 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class ButtonCode : MonoBehaviour
 {
-    public AudioSource audioSource;
-    public AudioSource canvasSound;
     public GameObject optionsMenu;
     public GameObject startMenu;
     public GameObject gameOverMenu;
     public GameObject inventoryMenu;
-    public GameObject canvas; 
+    public GameObject canvas;
+    public GameObject lockCursor;
+    public GameObject music;
     public Slider volumeSlider;
     public bool startMenuOn;
+    public bool inventoryMenuOn;
 
     public void Start()
     {
@@ -30,6 +31,11 @@ public class ButtonCode : MonoBehaviour
                 startMenu.SetActive(false);
                 inventoryMenu.SetActive(true);
                 startMenuOn = true;
+                inventoryMenuOn = true;
+                if (inventoryMenuOn == true)
+                {
+                    music.SetActive(false);
+                }
             }   
         }
         if (startMenuOn == true)
@@ -40,22 +46,10 @@ public class ButtonCode : MonoBehaviour
                 startMenuOn = false;
             }
         }
-        //if (startMenuOn == false)
-        //{
-        //    GetComponent<LockCursor>.().enabled = true;
-        //}
-    }
-    public void GeluidButton()
-    {
-        audioSource.Play();
-    }
-    public void CanvasGeluid()
-    {
-        canvasSound.Play();
-    }
-    public void Quit()
-    {
-        Application.Quit();
+        if (startMenuOn == false)
+        {
+            //lockCursor.SetActive(true);
+        }
     }
     public void Options()
     {
