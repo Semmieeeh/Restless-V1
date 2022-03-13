@@ -7,6 +7,7 @@ public class PickUp : MonoBehaviour
     public RaycastHit hit;
     public GameObject n7;
     public GameObject n4;
+    public GameObject n3;
 
     void Update()
     {
@@ -26,6 +27,14 @@ public class PickUp : MonoBehaviour
                 {
                     n4.SetActive(true);
                     print("je hebt n4 het opgepakt");
+                }
+            }
+            if (hit.transform.gameObject.tag == "N3")
+            {
+                if (Input.GetKeyDown("e"))
+                {
+                    n3.SetActive(true);
+                    print("je hebt n3 het opgepakt");
                 }
             }
         }

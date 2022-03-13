@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 125
+  controlID: 66
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 126
+  controlID: 67
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,7 +311,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 08e3ffffdce3ffff40ecffff38fbffff
+      m_ExpandedIDs: bca2fdffe4bffeffb8e1fffff4f6ffff12f7ffff1cf7fffff2f7ffff38fbffffce690000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -371,7 +371,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 357.60004
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -419,21 +419,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Osama's Assets/script
+    - Assets/Osama's Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Osama's Assets/script
+  - Assets/Osama's Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\gastl\Documents\GitHub\Easy-voldoende\Restless
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c7d0000
-    m_LastClickedID: 32044
+    m_SelectedIDs: b47c0000
+    m_LastClickedID: 31924
     m_ExpandedIDs: 00000000aa7c0000ac7c0000ae7c0000b07c0000b27c0000b47c00002a7d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 266.8}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
@@ -837,9 +837,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 231.92311, y: -55.148952, z: 28.167}
+    m_Target: {x: 380.69836, y: -59.560886, z: 32.259453}
     speed: 2
-    m_Value: {x: 231.92311, y: -55.148952, z: 28.167}
+    m_Value: {x: 380.69836, y: -59.560886, z: 32.259453}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -886,13 +886,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.108807735, y: -0.8299927, z: 0.17404033, w: -0.5187341}
+    m_Target: {x: 0.065733135, y: 0.8193506, z: -0.09577507, w: 0.56158113}
     speed: 2
-    m_Value: {x: -0.10906311, y: -0.82917136, z: 0.17386806, w: -0.519952}
+    m_Value: {x: 0.06488436, y: 0.81941044, z: -0.09453621, w: 0.5616222}
   m_Size:
-    m_Target: 114.73533
+    m_Target: 140.68114
     speed: 2
-    m_Value: 114.73533
+    m_Value: 147.31009
   m_Ortho:
     m_Target: 0
     speed: 2
