@@ -8,6 +8,7 @@ public class PickUp : MonoBehaviour
     public GameObject n7;
     public GameObject n4;
     public GameObject n3;
+    public GameObject n9;
 
     void Update()
     {
@@ -35,6 +36,14 @@ public class PickUp : MonoBehaviour
                 {
                     n3.SetActive(true);
                     print("je hebt n3 het opgepakt");
+                }
+            }
+            if (hit.transform.gameObject.tag == "N9")
+            {
+                if (Input.GetKeyDown("e"))
+                {
+                    n9.SetActive(true);
+                    print("je hebt n9 het opgepakt");
                 }
             }
         }
