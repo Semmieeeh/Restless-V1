@@ -15,6 +15,7 @@ TagManager:
   - N3
   - radio
   - FF7
+  - Safedoor
   layers:
   - Default
   - TransparentFX
