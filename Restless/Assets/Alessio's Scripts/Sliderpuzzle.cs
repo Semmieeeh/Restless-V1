@@ -80,7 +80,8 @@ public class Sliderpuzzle : MonoBehaviour
     {
         if(negen && drie && vier && zeven == true)
         {
-             //v.z = 90;
+            
+            SceneManager.LoadScene(1);
         }
     }
 
