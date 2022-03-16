@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 111
+  controlID: 80
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 112
+  controlID: 81
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,8 +166,8 @@ MonoBehaviour:
     y: 0
     width: 246.40002
     height: 764.4
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -338,10 +338,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 173.59998}
-      m_SelectedIDs: 2caefeff
-      m_LastClickedID: -86484
-      m_ExpandedIDs: a0f9ffff38fbffffba670000d0670000686a0000746a0000a46a0000bc6a0000be6a0000d06a0000ec70000058770000
+      scrollPos: {x: 0, y: 893.6}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 56bafeff30bbfeff1ec2feff88f5ffff96f5ffffa4f5ffffb2f5ffffc0f5ffffcef5ffffdcf5ffffeaf5ffff36fbffff38fbffff36cf00004ad1000038d2000080d500009ed50000d4d8000088de0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -449,22 +449,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Osama's Assets
+    - Assets/Osama's Assets/Textures
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Osama's Assets
+  - Assets/Osama's Assets/Textures
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\gastl\Documents\GitHub\Easy-voldoende\Restless
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fa7d0000
-    m_LastClickedID: 32250
-    m_ExpandedIDs: 00000000ea7d0000fa7d000000ca9a3b
+    m_SelectedIDs: d27e0000
+    m_LastClickedID: 32466
+    m_ExpandedIDs: 000000001e7e00009c7e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -492,7 +492,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000
+    m_ExpandedIDs: 000000001e7e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,7 +544,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 500.6001}
+    m_ScrollPosition: {x: 0, y: 788.6}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
@@ -867,9 +867,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 90.05606, y: 8.525821, z: 98.84084}
+    m_Target: {x: 49.6933, y: 15.072393, z: 124.403915}
     speed: 2
-    m_Value: {x: 90.05606, y: 8.525821, z: 98.84084}
+    m_Value: {x: 49.6933, y: 15.072393, z: 124.403915}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -916,9 +916,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.19552611, y: 0.60826933, z: -0.15802598, w: 0.75296456}
+    m_Target: {x: -0.08177218, y: -0.8698846, z: 0.15429834, w: -0.4615226}
     speed: 2
-    m_Value: {x: 0.19438201, y: 0.6084602, z: -0.15710148, w: 0.7532006}
+    m_Value: {x: -0.08245604, y: -0.8695665, z: 0.15558778, w: -0.46135405}
   m_Size:
     m_Target: 10
     speed: 2
