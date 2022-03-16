@@ -16,7 +16,7 @@ public class PlayerJump : MonoBehaviour
             if (isJumping <= 1)
             {
                 isGrounded = false;
-                GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + Vector3.up * 8;
+                GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + Vector3.up * 9;
             }
         }
     }
