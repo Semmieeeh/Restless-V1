@@ -19,6 +19,8 @@ public class Sliderpuzzle : MonoBehaviour
     public GameObject puzzel;
     public GameObject canvas;
     public GameObject startmenu;
+    public GameObject themeMusic;
+    public GameObject safedoor;
     public RaycastHit hit;
     //public bool sceneShift;
     //public float locknumbers;
@@ -85,7 +87,6 @@ public class Sliderpuzzle : MonoBehaviour
     {
         if(negen && drie && vier && zeven == true)
         {
-            
             transform.Rotate(v);
         }
         if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
@@ -97,7 +98,7 @@ public class Sliderpuzzle : MonoBehaviour
                     canvas.SetActive(true);
                     puzzel.SetActive(true);
                     startmenu.SetActive(false);
-                    print("dit is de kluis");
+                    themeMusic.SetActive(false);
                 }
             }
         }

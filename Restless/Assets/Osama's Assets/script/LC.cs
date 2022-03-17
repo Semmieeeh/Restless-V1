@@ -17,7 +17,10 @@ public class LC : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
             LockCursor.SetActive(true);
-            print("werkt");
+        }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            LockCursor.SetActive(false);
         }
     }
 }
