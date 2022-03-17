@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         //rb = gameObject.GetComponent<Rigidbody3D>();
         crouchSpeed = 2f;
         walkSpeed = 5f;
-        sprintSpeed = 12f;
+        sprintSpeed = 10f;
     }
 
     void Update()
