@@ -15,6 +15,9 @@ public class Sliderpuzzle : MonoBehaviour
     public bool zeven;
     public bool drie;
     public bool negen;
+    public Vector3 v;
+    public GameObject puzzel;
+    public RaycastHit hit;
     //public bool sceneShift;
     //public float locknumbers;
 
@@ -67,7 +70,7 @@ public class Sliderpuzzle : MonoBehaviour
         percentageTextvier.text = Mathf.RoundToInt(value * 10) + "%";
         if(value>=0.87 && value < 0.93)
         {
-            //SceneManager.LoadScene(1);
+            //SceneManager.LoadScene(1); 
             negen=true;
         }
         else
@@ -81,7 +84,18 @@ public class Sliderpuzzle : MonoBehaviour
         if(negen && drie && vier && zeven == true)
         {
             
-            SceneManager.LoadScene(1);
+            transform.Rotate(v);
+        }
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 3))
+        {
+            if (hit.transform.gameObject.tag == "Safedoor")
+            {
+                if (Input.GetKeyDown("e"))
+                {
+                    puzzel.SetActive(true);
+                    //Alessio is een God.
+                }
+            }
         }
     }
 
