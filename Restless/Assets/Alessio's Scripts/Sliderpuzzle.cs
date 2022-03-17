@@ -87,7 +87,7 @@ public class Sliderpuzzle : MonoBehaviour
     {
         if(negen && drie && vier && zeven == true)
         {
-            transform.Rotate(v);
+           
         }
         if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
         {
@@ -99,6 +99,7 @@ public class Sliderpuzzle : MonoBehaviour
                     puzzel.SetActive(true);
                     startmenu.SetActive(false);
                     themeMusic.SetActive(false);
+                    //Alessio is een God.
                 }
             }
         }
