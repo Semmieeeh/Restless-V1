@@ -10,7 +10,6 @@ public class ButtonCode : MonoBehaviour
     public GameObject startMenu;
     public GameObject gameOverMenu;
     public GameObject inventoryMenu;
-    public GameObject canvas;
     public GameObject lockCursor;
     public GameObject music;
     public Slider volumeSlider;
@@ -25,12 +24,9 @@ public class ButtonCode : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            if (startMenuOn == false)
+            if (inventoryMenuOn == false)
             {
-                canvas.SetActive(true);
-                startMenu.SetActive(false);
                 inventoryMenu.SetActive(true);
-                startMenuOn = true;
                 inventoryMenuOn = true;
                 if (inventoryMenuOn == true)
                 {
@@ -38,17 +34,13 @@ public class ButtonCode : MonoBehaviour
                 }
             }   
         }
-        if (startMenuOn == true)
+        if (inventoryMenuOn == true)
         {
             if (Input.GetKeyDown(KeyCode.O))
             {
-                canvas.SetActive(false);
-                startMenuOn = false;
+                inventoryMenu.SetActive(false);
+                inventoryMenuOn = false;
             }
-        }
-        if (startMenuOn == false)
-        {
-            //lockCursor.SetActive(true);
         }
     }
     public void Options()
@@ -63,9 +55,13 @@ public class ButtonCode : MonoBehaviour
     }
     public void StartGame()
     {
-        canvas.SetActive(false);
+        startMenu.SetActive(false);
         startMenuOn = false;
-        
+        if (startMenuOn == false)
+        {
+            music.SetActive(false);
+        }
+
     }
     public void ChangeVolume(float newVolume)
     {
