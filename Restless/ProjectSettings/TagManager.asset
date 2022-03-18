@@ -16,6 +16,8 @@ TagManager:
   - radio
   - FF7
   - Safedoor
+  - TOD
+  - SB
   layers:
   - Default
   - TransparentFX
