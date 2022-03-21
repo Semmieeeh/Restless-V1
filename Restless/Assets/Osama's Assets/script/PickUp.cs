@@ -10,7 +10,7 @@ public class PickUp : MonoBehaviour
     public GameObject n4;
     public GameObject n3;
     public GameObject n9;
-    public GameObject canva;
+
     //objects
     public GameObject papier7;
     public GameObject papier4;
@@ -22,7 +22,6 @@ public class PickUp : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "N7")
             {
-                canva.SetActive(true);
                 if (Input.GetKeyDown("e"))
                 {
                     n7.SetActive(true);
@@ -31,7 +30,6 @@ public class PickUp : MonoBehaviour
             }
             if (hit.transform.gameObject.tag == "N4")
             {
-                canva.SetActive(true);
                 if (Input.GetKeyDown("e"))
                 {
                     n4.SetActive(true);
@@ -40,7 +38,6 @@ public class PickUp : MonoBehaviour
             }
             if (hit.transform.gameObject.tag == "N3")
             {
-                canva.SetActive(true);
                 if (Input.GetKeyDown("e"))
                 {
                     n3.SetActive(true);
@@ -49,7 +46,6 @@ public class PickUp : MonoBehaviour
             }
             if (hit.transform.gameObject.tag == "N9")
             {
-                canva.SetActive(true);
                 if (Input.GetKeyDown("e"))
                 {
                     n9.SetActive(true);
