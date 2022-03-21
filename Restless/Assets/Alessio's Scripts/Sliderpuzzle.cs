@@ -15,6 +15,7 @@ public class Sliderpuzzle : MonoBehaviour
     public bool zeven;
     public bool drie;
     public bool negen;
+    public bool codeGoed;
     public Vector3 v;
     public GameObject puzzel;
     public GameObject canvas;
@@ -87,6 +88,12 @@ public class Sliderpuzzle : MonoBehaviour
     {
         if(negen && drie && vier && zeven == true)
         {
+           puzzel.SetActive(false);
+           codeGoed=true;
+           v.y=90;
+        }
+        else
+        {
            
         }
         if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
@@ -95,11 +102,14 @@ public class Sliderpuzzle : MonoBehaviour
             {
                 if (Input.GetKeyDown("e"))
                 {
-                    canvas.SetActive(true);
                     puzzel.SetActive(true);
                     startmenu.SetActive(false);
                     themeMusic.SetActive(false);
                     //Alessio is een God.
+                }
+                if(Input.GetKeyDown(KeyCode.Q))
+                {
+                    puzzel.SetActive(false);
                 }
             }
         }

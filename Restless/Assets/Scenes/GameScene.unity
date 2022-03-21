@@ -776,7 +776,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1449355459}
-  m_RootOrder: 101
+  m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 205.456}
 --- !u!23 &100508159
 MeshRenderer:
@@ -5351,7 +5351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947821671}
   m_LocalRotation: {x: -0, y: -0.71994144, z: -0, w: -0.6940349}
-  m_LocalPosition: {x: 45.67, y: 1.72, z: 93.91}
+  m_LocalPosition: {x: 117.3, y: 1.72, z: 124}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5434,6 +5434,7 @@ MonoBehaviour:
   zeven: 0
   drie: 0
   negen: 0
+  codeGoed: 0
   v: {x: 0, y: 0, z: 0}
   puzzel: {fileID: 1088992102317643620}
   canvas: {fileID: 6420084505044429937}
@@ -5681,7 +5682,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1449355459}
-  m_RootOrder: 94
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &975656586
 MeshRenderer:
@@ -7543,7 +7544,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1449355459}
-  m_RootOrder: 118
+  m_RootOrder: 113
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 47.833}
 --- !u!23 &1254339538
 MeshRenderer:
@@ -8807,6 +8808,7 @@ Transform:
   - {fileID: 813647383}
   - {fileID: 518044770}
   - {fileID: 1977906884}
+  - {fileID: 975656585}
   - {fileID: 638690374}
   - {fileID: 67463654}
   - {fileID: 1438653598}
@@ -8825,15 +8827,15 @@ Transform:
   - {fileID: 426176475}
   - {fileID: 1083217473}
   - {fileID: 941265112}
-  - {fileID: 975656585}
+  - {fileID: 100508158}
   - {fileID: 1360764332}
   - {fileID: 1371794799}
   - {fileID: 1464763193}
   - {fileID: 45473587}
   - {fileID: 1808957060}
   - {fileID: 771063745}
-  - {fileID: 100508158}
   - {fileID: 698197940}
+  - {fileID: 1989583927}
   - {fileID: 1268894941}
   - {fileID: 410051648}
   - {fileID: 1822126548}
@@ -8841,15 +8843,14 @@ Transform:
   - {fileID: 2128066877}
   - {fileID: 1981827067}
   - {fileID: 1538097251}
-  - {fileID: 1989583927}
   - {fileID: 15705067}
   - {fileID: 61890671}
+  - {fileID: 1254339537}
   - {fileID: 364101939}
   - {fileID: 1007239370}
-  - {fileID: 1906473746}
   - {fileID: 1726252726}
   - {fileID: 1427397051}
-  - {fileID: 1254339537}
+  - {fileID: 1906473746}
   - {fileID: 1448864528}
   - {fileID: 1474141752}
   - {fileID: 1567393674}
@@ -16600,7 +16601,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1449355459}
-  m_RootOrder: 110
+  m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -52.582}
 --- !u!23 &1989583928
 MeshRenderer:
@@ -22851,6 +22852,7 @@ MonoBehaviour:
   zeven: 0
   drie: 0
   negen: 0
+  codeGoed: 0
   v: {x: 0, y: 0, z: 0}
   puzzel: {fileID: 1088992102317643620}
   canvas: {fileID: 6420084505044429937}
