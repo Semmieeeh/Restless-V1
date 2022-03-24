@@ -23,8 +23,7 @@ public class Sliderpuzzle : MonoBehaviour
     public GameObject themeMusic;
     public GameObject safedoor;
     public RaycastHit hit;
-    //public bool sceneShift;
-    //public float locknumbers;
+    public Transform door;
 
     void Start()
     {
@@ -34,9 +33,8 @@ public class Sliderpuzzle : MonoBehaviour
     public void TextUpdate(float value)
     {
         percentageText.text = Mathf.RoundToInt(value * 10) + "%";
-        if(value>=0.37 && value < 0.43)
+        if(value>=0.35 && value < 0.45)
         {
-            //SceneManager.LoadScene(1);
             vier=true;
         }
         else
@@ -47,9 +45,8 @@ public class Sliderpuzzle : MonoBehaviour
     public void TextUpdatetwee(float value)
     {
         percentageTexttwee.text = Mathf.RoundToInt(value * 10) + "%";
-        if(value>=0.67 && value < 0.73)
+        if(value>=0.65 && value < 0.75)
         {
-            //SceneManager.LoadScene(1);
             zeven=true;
         }
         else
@@ -60,9 +57,8 @@ public class Sliderpuzzle : MonoBehaviour
     public void TextUpdatedrie(float value)
     {
         percentageTextdrie.text = Mathf.RoundToInt(value * 10) + "%";
-        if(value>=0.27 && value < 0.33)
+        if(value>=0.25 && value < 0.35)
         {
-            //SceneManager.LoadScene(1);
             drie=true;
         }
         else
@@ -73,9 +69,8 @@ public class Sliderpuzzle : MonoBehaviour
     public void TextUpdatevier(float value)
     {
         percentageTextvier.text = Mathf.RoundToInt(value * 10) + "%";
-        if(value>=0.87 && value < 0.93)
+        if(value>=0.85 && value < 0.95)
         {
-            //SceneManager.LoadScene(1); 
             negen=true;
         }
         else
@@ -90,11 +85,7 @@ public class Sliderpuzzle : MonoBehaviour
         {
            puzzel.SetActive(false);
            codeGoed=true;
-           v.y=90;
-        }
-        else
-        {
-           
+           door.Rotate(new Vector3(0,0,90));
         }
         if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
         {
@@ -105,13 +96,13 @@ public class Sliderpuzzle : MonoBehaviour
                     puzzel.SetActive(true);
                     startmenu.SetActive(false);
                     themeMusic.SetActive(false);
-                    //Alessio is een God.
                 }
-                if(Input.GetKeyDown(KeyCode.Q))
+            }
+
+            if(Input.GetKeyDown(KeyCode.Q))
                 {
                     puzzel.SetActive(false);
                 }
-            }
         }
     }
 
