@@ -15,7 +15,9 @@ public class NavMesh2 : MonoBehaviour
     public bool idle;
     public int currentTargetIndex;
     public float inRange;
-
+    public GameObject killer;
+    public Vector3 rotatie;
+    public float xRotation = 0f;
     public void Start()
     {
 
@@ -84,12 +86,13 @@ public class NavMesh2 : MonoBehaviour
 
 
 
-
+        xRotation = Mathf.Clamp(xRotation, -1f, 1f);
+        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
     }
 
+    
 
- 
 
 }
 
