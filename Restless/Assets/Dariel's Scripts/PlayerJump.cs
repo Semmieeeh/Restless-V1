@@ -6,6 +6,7 @@ public class PlayerJump : MonoBehaviour
 {
     public int isJumping;
     public bool isGrounded;
+    public Transform jumpiedumie;
 
 
     void Update()
@@ -16,8 +17,12 @@ public class PlayerJump : MonoBehaviour
             if (isJumping <= 1)
             {
                 isGrounded = false;
-                GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + Vector3.up * 10;
+                GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + Vector3.up * 20;
             }
+        }
+        else
+        {
+            GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + Vector3.down * 1;
         }
     }
 
