@@ -4967,7 +4967,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isJumping: 0
   isGrounded: 0
-  jumpiedumie: {fileID: 0}
 --- !u!114 &947821681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118181,7 +118180,7 @@ GameObject:
   - component: {fileID: 817194355}
   m_Layer: 0
   m_Name: huis
-  m_TagString: Wall
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
