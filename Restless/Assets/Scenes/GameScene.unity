@@ -4945,7 +4945,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947821671}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 1
@@ -118180,7 +118180,7 @@ GameObject:
   - component: {fileID: 817194355}
   m_Layer: 0
   m_Name: huis
-  m_TagString: Floor
+  m_TagString: Dak
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
