@@ -6,7 +6,6 @@ public class PlayerJump : MonoBehaviour
 {
     public int isJumping;
     public bool isGrounded;
-    public Transform jumpiedumie;
 
 
     void Update()
