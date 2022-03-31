@@ -4821,7 +4821,6 @@ GameObject:
   - component: {fileID: 947821672}
   - component: {fileID: 947821677}
   - component: {fileID: 947821680}
-  - component: {fileID: 947821681}
   - component: {fileID: 947821683}
   - component: {fileID: 947821684}
   - component: {fileID: 947821685}
@@ -4929,8 +4928,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947821671}
   m_LocalRotation: {x: -0, y: -0.71994144, z: -0, w: -0.6940349}
-  m_LocalPosition: {x: 85.64, y: 1.72, z: 130.76}
-  m_LocalScale: {x: 1, y: 3, z: 1}
+  m_LocalPosition: {x: 130.5, y: 4.8, z: 118.1}
+  m_LocalScale: {x: 1, y: 2.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 961739753}
@@ -4946,8 +4945,8 @@ Rigidbody:
   m_GameObject: {fileID: 947821671}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0.001
+  m_AngularDrag: 0.001
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4965,20 +4964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f24fb90c263f54baf129f6ec41f8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isJumping: 0
   isGrounded: 0
---- !u!114 &947821681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947821671}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8151513e7dda9409a3a9d7610897e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  jumpPower: {x: 0, y: 6.5, z: 0}
 --- !u!114 &947821683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118180,7 +118167,7 @@ GameObject:
   - component: {fileID: 817194355}
   m_Layer: 0
   m_Name: huis
-  m_TagString: Dak
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

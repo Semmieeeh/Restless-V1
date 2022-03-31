@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
 {
-    public int isJumping;
     public bool isGrounded;
-
+    public Vector3 jumpPower;
 
     void Update()
     {
         if (Input.GetButtonDown("Jump"))
         {
-            isJumping += 1;
-            if (isJumping <= 1)
+            if(isGrounded==true)
             {
                 isGrounded = false;
-                GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + Vector3.up * 10;
+                GetComponent<Rigidbody>().velocity += jumpPower;
             }
         }
     }
@@ -26,21 +24,6 @@ public class PlayerJump : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             isGrounded = true;
-            if (isGrounded == true)
-            {
-                isJumping = 0;
-            }
         }
-
-        if (collision.gameObject.tag == "Dak")
-        {
-            GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + Vector3.down * 500;
-            isGrounded = true;
-            if (isGrounded == true)
-            {
-                isJumping = 0;
-            }
-        }
-        
     }
 }
