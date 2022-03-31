@@ -19,6 +19,7 @@ TagManager:
   - TOD
   - SB
   - Dak
+  - Key
   layers:
   - Default
   - TransparentFX
