@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour
 {
-    public GameObject Key;
-    public RaycastHit hit;
     public float range;
+    public RaycastHit hit;
+    public GameObject key;
+    public GameObject keyCanva;
 
-    private void Start()
+    void Start()
     {
         range = 3;
     }
 
-
     void Update()
     {
-        if(Physics.Raycast(transform.position, transform.forward, out hit, range))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, range))
         {
             if (hit.transform.gameObject.tag == "Key")
             {
-                
+                keyCanva.SetActive(true);
+                key.SetActive(false);
             }
         }
     }
