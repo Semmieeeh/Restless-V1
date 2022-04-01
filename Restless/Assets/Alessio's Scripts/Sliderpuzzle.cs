@@ -85,23 +85,32 @@ public class Sliderpuzzle : MonoBehaviour
         {
            puzzel.SetActive(false);
            codeGoed=true;
-           door.Rotate(new Vector3(0,0,90));
+            Cursor.lockState = CursorLockMode.Locked;
+            if (codeGoed == true)
+            {
+                door.Rotate(new Vector3(0, 0, 90));  
+            }
         }
         if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
         {
             if (hit.transform.gameObject.tag == "Safedoor")
             {
-                if (Input.GetKeyDown("e"))
+                if (codeGoed == false)
                 {
-                    puzzel.SetActive(true);
-                    startmenu.SetActive(false);
-                    themeMusic.SetActive(false);
+                    if (Input.GetKeyDown("e"))
+                    {
+                        puzzel.SetActive(true);
+                        startmenu.SetActive(false);
+                        themeMusic.SetActive(false);
+                        Cursor.lockState = CursorLockMode.None;
+                    }
                 }
             }
 
             if(Input.GetKeyDown(KeyCode.Q))
                 {
                     puzzel.SetActive(false);
+                    Cursor.lockState = CursorLockMode.Locked;
                 }
         }
     }

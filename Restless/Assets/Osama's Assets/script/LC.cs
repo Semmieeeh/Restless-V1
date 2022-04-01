@@ -16,11 +16,11 @@ public class LC : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
-            LockCursor.SetActive(true);
+            Cursor.lockState = CursorLockMode.Locked;
         }
         if (Input.GetKeyDown(KeyCode.U))
         {
-            LockCursor.SetActive(false);
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
