@@ -8,6 +8,8 @@ public class KeyScript : MonoBehaviour
     public RaycastHit hit;
     public GameObject key;
     public GameObject keyCanva;
+    public GameObject gameEnd;
+    public bool sleutelOpgepakt;
 
     void Start()
     {
@@ -20,8 +22,25 @@ public class KeyScript : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "Key")
             {
-                keyCanva.SetActive(true);
-                key.SetActive(false);
+                if (Input.GetKeyDown("e"))
+                {
+                    keyCanva.SetActive(true);
+                    key.SetActive(false);
+                    sleutelOpgepakt = true;
+                }
+            }
+        }
+        if (Physics.Raycast(transform.position, transform.forward, out hit, range))
+        {
+            if (sleutelOpgepakt == true)
+            {
+                if (hit.transform.gameObject.tag == "Auto")
+                {
+                    if (Input.GetKeyDown("e"))
+                    {
+                        gameEnd.SetActive(true);
+                    }
+                }
             }
         }
     }

@@ -23,6 +23,7 @@ TagManager:
   - graf
   - Schep
   - Garage
+  - Auto
   layers:
   - Default
   - TransparentFX
