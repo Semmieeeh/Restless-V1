@@ -9,6 +9,7 @@ public class Schep : MonoBehaviour
     public GameObject schep;
     public GameObject schepI;
     public GameObject graf;
+    public GameObject graf1;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +40,7 @@ public class Schep : MonoBehaviour
                     if (Input.GetKeyDown("e"))
                     {
                         graf.SetActive(false);
-                        print("hallo?");
+                        graf1.SetActive(false);
                     }
                 }
             }
