@@ -42,7 +42,7 @@ public class Sliderpuzzle : MonoBehaviour
             vier=false;
         }
     }
-    public void TextUpdatetwee(float value)
+    public void TextUpdateTwee(float value)
     {
         percentageTexttwee.text = Mathf.RoundToInt(value * 10) + "%";
         if(value>=0.65 && value < 0.75)
@@ -54,7 +54,7 @@ public class Sliderpuzzle : MonoBehaviour
             zeven=false;
         }
     }
-    public void TextUpdatedrie(float value)
+    public void TextUpdateDrie(float value)
     {
         percentageTextdrie.text = Mathf.RoundToInt(value * 10) + "%";
         if(value>=0.25 && value < 0.35)
@@ -66,7 +66,7 @@ public class Sliderpuzzle : MonoBehaviour
             drie=false;
         }
     }
-    public void TextUpdatevier(float value)
+    public void TextUpdateVier(float value)
     {
         percentageTextvier.text = Mathf.RoundToInt(value * 10) + "%";
         if(value>=0.85 && value < 0.95)

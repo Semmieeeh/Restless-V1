@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003140541, g: 0.006170615, b: 0.014241756, a: 1}
+  m_IndirectSpecularColor: {r: 0.0031405094, g: 0.0061705993, b: 0.014241768, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -63955,7 +63955,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1088992102317643622}
         m_TargetAssemblyTypeName: Sliderpuzzle, Assembly-CSharp
-        m_MethodName: TextUpdatetwee
+        m_MethodName: TextUpdateTwee
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -64890,7 +64890,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1088992102317643622}
         m_TargetAssemblyTypeName: Sliderpuzzle, Assembly-CSharp
-        m_MethodName: TextUpdatevier
+        m_MethodName: TextUpdateVier
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -65086,7 +65086,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1088992102317643622}
         m_TargetAssemblyTypeName: Sliderpuzzle, Assembly-CSharp
-        m_MethodName: TextUpdatedrie
+        m_MethodName: TextUpdateDrie
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
