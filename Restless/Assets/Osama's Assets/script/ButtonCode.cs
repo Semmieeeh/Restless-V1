@@ -57,6 +57,7 @@ public class ButtonCode : MonoBehaviour
     {
         startMenu.SetActive(false);
         startMenuOn = false;
+        Cursor.lockState = CursorLockMode.Locked;
         if (startMenuOn == false)
         {
             music.SetActive(false);
