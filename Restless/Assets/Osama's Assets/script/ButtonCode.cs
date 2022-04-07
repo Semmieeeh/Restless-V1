@@ -32,7 +32,7 @@ public class ButtonCode : MonoBehaviour
                 {
                     music.SetActive(false);
                 }
-            }   
+            }
         }
         if (inventoryMenuOn == true)
         {

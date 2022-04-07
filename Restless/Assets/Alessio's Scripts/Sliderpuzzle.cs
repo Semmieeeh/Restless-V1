@@ -63,7 +63,7 @@ public class Sliderpuzzle : MonoBehaviour
     }
     public void TextUpdateVier(float value)
     {
-        percentageTextvier.text = Mathf.RoundToInt(value * 10) +.ToString();
+        percentageTextvier.text = Mathf.RoundToInt(value * 10).ToString();
         if(value>=0.85 && value < 0.95)
         {
             negen=true;
