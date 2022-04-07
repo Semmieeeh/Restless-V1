@@ -16,6 +16,7 @@ public class DeathScript : MonoBehaviour
         if(collision.gameObject.tag == "Monster")
         {
             canvas.SetActive(true);
+            if collision.
         }
     }
     

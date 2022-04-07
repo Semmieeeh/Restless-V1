@@ -48,6 +48,7 @@ public class NavMesh2 : MonoBehaviour
                     {
                         transform.LookAt(player);
                         navMeshAgent.destination = player.position;
+
                         
                     }
                     else
@@ -86,8 +87,7 @@ public class NavMesh2 : MonoBehaviour
 
 
 
-        xRotation = Mathf.Clamp(xRotation, -1f, 1f);
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        
 
     }
 
