@@ -25,14 +25,9 @@ public class Sliderpuzzle : MonoBehaviour
     public RaycastHit hit;
     public Transform door;
 
-    void Start()
-    {
-
-    }
-
     public void TextUpdate(float value)
     {
-        percentageText.text = Mathf.RoundToInt(value * 10) + "%";
+        percentageText.text = Mathf.RoundToInt(value * 10) + "";
         if(value>=0.35 && value < 0.45)
         {
             vier=true;
@@ -44,7 +39,7 @@ public class Sliderpuzzle : MonoBehaviour
     }
     public void TextUpdateTwee(float value)
     {
-        percentageTexttwee.text = Mathf.RoundToInt(value * 10) + "%";
+        percentageTexttwee.text = Mathf.RoundToInt(value * 10) + "";
         if(value>=0.65 && value < 0.75)
         {
             zeven=true;
@@ -56,7 +51,7 @@ public class Sliderpuzzle : MonoBehaviour
     }
     public void TextUpdateDrie(float value)
     {
-        percentageTextdrie.text = Mathf.RoundToInt(value * 10) + "%";
+        percentageTextdrie.text = Mathf.RoundToInt(value * 10) + "";
         if(value>=0.25 && value < 0.35)
         {
             drie=true;
@@ -68,7 +63,7 @@ public class Sliderpuzzle : MonoBehaviour
     }
     public void TextUpdateVier(float value)
     {
-        percentageTextvier.text = Mathf.RoundToInt(value * 10) + "%";
+        percentageTextvier.text = Mathf.RoundToInt(value * 10) + "";
         if(value>=0.85 && value < 0.95)
         {
             negen=true;
