@@ -7,8 +7,6 @@ public class OpenDoor : MonoBehaviour
     public RaycastHit hit;
     public Vector3 v;
     public bool isOpen;
-    public AudioSource source;
-    public AudioClip a;
 
 
     void Update()
@@ -32,7 +30,6 @@ public class OpenDoor : MonoBehaviour
                     }
 
                     hit.transform.Rotate(v);
-                    source.PlayOneShot(a);
                 }
             }
         }
