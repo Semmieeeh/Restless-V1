@@ -23,7 +23,7 @@ public class Schep : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "Schep")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     schep.SetActive(false);
                     schepI.SetActive(true);
@@ -37,7 +37,7 @@ public class Schep : MonoBehaviour
             {
                 if (schepOpgepakt == true)
                 {
-                    if (Input.GetKeyDown("e"))
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
                         graf.SetActive(false);
                         graf1.SetActive(false);

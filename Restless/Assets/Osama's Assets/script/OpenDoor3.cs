@@ -6,10 +6,9 @@ public class OpenDoor3 : MonoBehaviour
 {
     public RaycastHit hit;
     public Vector3 v;
-    public bool isOpen;
     public AudioSource source;
     public AudioClip a;
-
+    public bool isOpen;
 
     void Update()
     {
@@ -18,7 +17,7 @@ public class OpenDoor3 : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "Garage")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (isOpen == true)
                     {
@@ -30,7 +29,6 @@ public class OpenDoor3 : MonoBehaviour
                         v.x = -90;
                         isOpen = true;
                     }
-
                     hit.transform.Rotate(v);
                     source.PlayOneShot(a);
                 }

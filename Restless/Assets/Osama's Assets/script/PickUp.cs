@@ -18,11 +18,11 @@ public class PickUp : MonoBehaviour
     public GameObject papier9;
     void Update()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 3))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
         {
             if (hit.transform.gameObject.tag == "N7")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     n7.SetActive(true);
                     papier7.SetActive(false);
@@ -30,7 +30,7 @@ public class PickUp : MonoBehaviour
             }
             if (hit.transform.gameObject.tag == "N4")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     n4.SetActive(true);
                     papier4.SetActive(false);
@@ -38,7 +38,7 @@ public class PickUp : MonoBehaviour
             }
             if (hit.transform.gameObject.tag == "N3")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     n3.SetActive(true);
                     papier3.SetActive(false);
@@ -46,7 +46,7 @@ public class PickUp : MonoBehaviour
             }
             if (hit.transform.gameObject.tag == "N9")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     n9.SetActive(true);
                     papier9.SetActive(false);

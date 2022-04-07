@@ -62,7 +62,6 @@ public class ButtonCode : MonoBehaviour
         {
             music.SetActive(false);
         }
-
     }
     public void ChangeVolume(float newVolume)
     {

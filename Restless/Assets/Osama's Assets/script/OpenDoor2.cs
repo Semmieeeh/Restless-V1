@@ -6,20 +6,20 @@ public class OpenDoor2 : MonoBehaviour
 {
     public RaycastHit hit;
     public Vector3 v;
-    public bool isOpen;
     public AudioSource shrek;
-    public bool shrekOn;
     public GameObject sM;
+    public bool isOpen;
+    public bool shrekOn;
 
 
     void Update()
     {
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 3))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
         {
             if (hit.transform.gameObject.tag == "ShrekDoor")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (shrekOn == false)
                     {

@@ -39,6 +39,7 @@ public class KeyScript : MonoBehaviour
                     if (Input.GetKeyDown("e"))
                     {
                         gameEnd.SetActive(true);
+                        Cursor.lockState = CursorLockMode.None;
                     }
                 }
             }

@@ -22,7 +22,7 @@ public class Radio : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "radio")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     sM.SetActive(false);
                     fFM.SetActive(false);
@@ -35,7 +35,7 @@ public class Radio : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "FF7")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     fFM.SetActive(true);
                 }
@@ -45,7 +45,7 @@ public class Radio : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "TOD")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     tOD.SetActive(true);
                 }
@@ -55,7 +55,7 @@ public class Radio : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "SB")
             {
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     sB.SetActive(true);
                 }
