@@ -12,14 +12,12 @@ public class ButtonCode : MonoBehaviour
     public GameObject inventoryMenu;
     public GameObject lockCursor;
     public GameObject music;
+    public GameObject igMusic;
     public Slider volumeSlider;
     public bool startMenuOn;
     public bool inventoryMenuOn;
 
-    public void Start()
-    {
 
-    }
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
@@ -56,12 +54,9 @@ public class ButtonCode : MonoBehaviour
     public void StartGame()
     {
         startMenu.SetActive(false);
-        startMenuOn = false;
+        igMusic.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
-        if (startMenuOn == false)
-        {
-            music.SetActive(false);
-        }
+        music.SetActive(false);
     }
     public void ChangeVolume(float newVolume)
     {
