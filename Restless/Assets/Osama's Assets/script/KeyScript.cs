@@ -8,6 +8,7 @@ public class KeyScript : MonoBehaviour
     public GameObject key;
     public GameObject keyCanva;
     public GameObject gameEnd;
+    public bool sleutelOpgepakt;
 
     void Start()
     {
