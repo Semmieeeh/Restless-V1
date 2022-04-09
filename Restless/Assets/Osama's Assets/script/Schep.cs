@@ -8,15 +8,9 @@ public class Schep : MonoBehaviour
     public RaycastHit hit;
     public GameObject schep;
     public GameObject schepI;
-    public GameObject graf;
     public GameObject graf1;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (Physics.Raycast(transform.position, transform.forward, out hit, 5))
@@ -39,7 +33,6 @@ public class Schep : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        graf.SetActive(false);
                         graf1.SetActive(false);
                     }
                 }

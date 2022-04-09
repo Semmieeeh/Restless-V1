@@ -24,6 +24,9 @@ TagManager:
   - Schep
   - Garage
   - Auto
+  - graf2
+  - graf3
+  - graf4
   layers:
   - Default
   - TransparentFX
